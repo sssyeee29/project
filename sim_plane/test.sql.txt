@@ -1,0 +1,255 @@
+USE sim_plane_db;
+
+ -- sim_question 테이블
+CREATE TABLE sim_question (
+  questionid int AUTO_INCREMENT PRIMARY KEY,
+  testid int not null,
+  question text not null,
+  q_index int not null,
+  FOREIGN KEY (testid) REFERENCES sim_test(testid) ON DELETE CASCADE
+);
+
+-- sim_answer 테이블
+create table sim_answer(
+  answerid int auto_increment primary key,
+  questionid int not null,
+  answer text not null,
+  score int default 0,
+  type varchar(10),
+  foreign key (questionid) references sim_question(questionid) on delete cascade
+);
+
+-- sim_result 테이블
+create table sim_result(
+  resultid int auto_increment primary key,
+  testid int not null,
+  totalscore int default 0,
+  resulttype varchar(20),
+  result text not null,
+  foreign key (testid) references sim_test(testid) on delete cascade
+);
+
+-- test 1
+-- INSERT INTO sim_test (testname) VALUES ('나는 전생에 어떤 동물이였을까?');
+
+INSERT INTO sim_question (testid, question, q_index)
+VALUES
+(1, '당신이 선호하는 시간대는 언제인가요?', 1),
+(1, '무리를 지을 때 당신의 역할은?', 2);
+
+INSERT INTO sim_answer (questionid, answer, score, type)
+VALUES
+(1, '아침', 2, 'A'),
+(1, '낮', 4, 'B'),
+(1, '저녁', 6, 'C'),
+(1, '밤', 8, 'D'),
+(2, '리더 역할', 8, 'A'),
+(2, '서포터 역할', 6, 'B'),
+(2, '관찰자 역할', 4, 'C'),
+(2, '혼자가 편함', 2, 'D');
+
+INSERT INTO sim_result (testid, totalscore, resulttype, result)
+VALUES
+(1, 4, NULL, '당신은 조용하고 신중한 고양이 타입입니다. 혼자 있는 걸 즐기고 섬세한 감성을 지녔어요.'),
+(1, 8, NULL, '당신은 사려 깊고 조율 잘하는 토끼 타입입니다. 부드럽고 유연하게 사람들과 잘 지냅니다.'),
+(1, 12, NULL, '당신은 활발하고 사회적인 강아지 타입입니다. 리더십과 충성심이 강해요.'),
+(1, 16, NULL, '당신은 에너제틱한 호랑이 타입입니다. 주도적이고 강한 추진력을 가졌어요.');
+
+
+-- test 2
+INSERT INTO sim_test (testname) VALUES
+('당신은 어떤 동물 유형일까? 2탄');
+
+INSERT INTO sim_question (testid, question, q_index)
+VALUES
+(2, '문제가 생겼을 때 당신의 대처 방식은?', 1),
+(2, '여행을 간다면 어떤 스타일을 선호하나요?', 2),
+(2, '다른 사람과 의견이 다를 때 당신의 반응은?', 3),
+(2, '하루 일과가 끝난 후 가장 하고 싶은 일은?', 4);
+
+INSERT INTO sim_answer (questionid, answer, score, type)
+VALUES
+(3, '혼자 조용히 정리한다', 2, 'I'),
+(3, '가까운 사람과 상의한다', 4, 'S'),
+(3, '바로 해결책을 찾는다', 6, 'E'),
+(3, '일단 무시하고 넘긴다', 8, 'P'),
+(4, '계획 짜는 게 즐겁다', 2, 'I'),
+(4, '느긋하게 흘러가는 게 좋다', 4, 'S'),
+(4, '새로운 사람과 어울리고 싶다', 6, 'E'),
+(4, '이벤트가 가득한 여행이 좋다', 8, 'P'),
+(5, '상대 입장을 먼저 듣는다', 2, 'I'),
+(5, '논리적으로 설명한다', 4, 'S'),
+(5, '자신 있게 설득한다', 6, 'E'),
+(5, '가볍게 넘긴다', 8, 'P'),
+(6, '혼자만의 시간을 갖는다', 2, 'I'),
+(6, '가족이나 친구와 대화한다', 4, 'S'),
+(6, '모임이나 약속에 나간다', 6, 'E'),
+(6, '새로운 콘텐츠를 즐긴다', 8, 'P');
+
+INSERT INTO sim_result (testid, totalscore, resulttype, result)
+VALUES
+(2, 8, NULL, '당신은 조용한 사슴 타입입니다. 내면이 깊고 섬세한 감성을 지녔어요.'),
+(2, 16, NULL, '당신은 현실적이고 따뜻한 곰 타입입니다. 안정감을 주는 존재예요.'),
+(2, 24, NULL, '당신은 활동적인 여우 타입입니다. 재치 있고 사교성이 뛰어나요.'),
+(2, 32, NULL, '당신은 자유로운 독수리 타입입니다. 도전적이고 창의적인 성향이에요.');
+
+
+-- test 3
+INSERT INTO sim_test (testname) VALUES ('나는 어떤 영화 캐릭터?');
+
+-- 질문
+INSERT INTO sim_question (testid, question, q_index) VALUES
+(3, '위기 상황에서 당신은 어떻게 행동하나요?', 1),
+(3, '친구와의 갈등이 생겼을 때 당신의 선택은?', 2),
+(3, '가장 좋아하는 영화 장르는?', 3),
+(3, '당신의 평소 성격은?', 4);
+
+-- 보기
+INSERT INTO sim_answer (questionid, answer, score, type) VALUES
+(7, '계획을 세우고 침착하게 해결한다', 2, 'C'),
+(7, '직감적으로 빠르게 움직인다', 4, 'A'),
+(7, '다른 사람과 협력한다', 6, 'B'),
+(7, '우선 피하고 나중에 생각한다', 8, 'D'),
+
+(8, '직접 대화를 시도한다', 2, 'C'),
+(8, '시간을 두고 자연스럽게 풀리길 기다린다', 4, 'D'),
+(8, '유머로 넘긴다', 6, 'A'),
+(8, '서로의 입장을 논리적으로 이야기한다', 8, 'B'),
+
+(9, '스릴러/액션', 2, 'A'),
+(9, '로맨스/드라마', 4, 'D'),
+(9, '코미디/애니메이션', 6, 'B'),
+(9, '판타지/SF', 8, 'C'),
+
+(10, '차분하고 분석적이다', 2, 'C'),
+(10, '즉흥적이고 유쾌하다', 4, 'A'),
+(10, '따뜻하고 배려심 있다', 6, 'D'),
+(10, '명확하고 논리적이다', 8, 'B');
+
+-- 결과
+INSERT INTO sim_result (testid, totalscore, resulttype, result) VALUES
+(3, 8, NULL, '당신은 전략가형 캐릭터! 언제나 침착하고 똑똑한 인물이에요.'),
+(3, 16, NULL, '당신은 유쾌한 개그 캐릭터! 분위기를 띄우는 중심입니다.'),
+(3, 24, NULL, '당신은 논리파 리더! 상황 판단이 빠르고 이성적인 타입이에요.'),
+(3, 32, NULL, '당신은 따뜻한 조력자! 다정하고 이해심 많은 인물이에요.');
+
+
+-- test 4
+INSERT INTO sim_test (testname) VALUES ('당신의 이상적인 휴가 스타일은?');
+
+INSERT INTO sim_question (testid, question, q_index) VALUES
+(4, '휴가 기간, 가장 먼저 떠오르는 것은?', 1),
+(4, '이상적인 숙소는?', 2),
+(4, '일정을 짤 때 당신은?', 3),
+(4, '여행 중 음식은?', 4);
+
+INSERT INTO sim_answer (questionid, answer, score, type) VALUES
+(11, '자연 속 힐링', 2, 'H'),
+(11, '활동적인 액티비티', 4, 'A'),
+(11, '도심 명소 탐방', 6, 'U'),
+(11, '집에서 푹 쉬기', 8, 'R'),
+
+(12, '한적한 산장', 2, 'H'),
+(12, '풀빌라, 리조트', 4, 'A'),
+(12, '호텔 중심지', 6, 'U'),
+(12, '내 방', 8, 'R'),
+
+(13, '꼼꼼하게 사전 준비', 2, 'U'),
+(13, '느낌 가는 대로', 4, 'R'),
+(13, '대략 틀만 정한다', 6, 'H'),
+(13, '현지에서 즉흥적으로', 8, 'A'),
+
+(14, '현지 음식 투어', 2, 'U'),
+(14, '맛집 리스트 필수', 4, 'H'),
+(14, '편의점, 간편식 OK', 6, 'R'),
+(14, '고급 레스토랑', 8, 'A');
+
+INSERT INTO sim_result (testid, totalscore, resulttype, result) VALUES
+(4, 8, NULL, '당신은 힐링형 여행자! 자연과 조용한 공간에서 재충전합니다.'),
+(4, 16, NULL, '당신은 액티브형 여행자! 역동적인 일정이 잘 어울려요.'),
+(4, 24, NULL, '당신은 도심탐방형 여행자! 구경하고 배우는 게 즐겁습니다.'),
+(4, 32, NULL, '당신은 집콕형 여행자! 휴가는 집이 최고죠.');
+
+
+-- test 5
+INSERT INTO sim_test (testname) VALUES ('당신의 인간관계 유형은?');
+
+INSERT INTO sim_question (testid, question, q_index) VALUES
+(5, '처음 보는 사람 앞에서 당신은?', 1),
+(5, '갈등 상황에서는?', 2),
+(5, '친구의 고민 상담을 받을 때는?', 3),
+(5, '평소 대화 스타일은?', 4);
+
+INSERT INTO sim_answer (questionid, answer, score, type) VALUES
+(15, '먼저 말을 건다', 2, 'E'),
+(15, '상대가 다가오길 기다린다', 4, 'I'),
+(15, '분위기에 따라 달라진다', 6, 'A'),
+(15, '말을 아낀다', 8, 'N'),
+
+(16, '바로 이야기로 풀자', 2, 'E'),
+(16, '시간을 두고 정리한다', 4, 'I'),
+(16, '상대가 원하는 방식을 따른다', 6, 'A'),
+(16, '일단 피한다', 8, 'N'),
+
+(17, '조언과 해결책을 제시한다', 2, 'E'),
+(17, '경청하며 공감한다', 4, 'I'),
+(17, '상황에 맞춰 적절히 반응한다', 6, 'A'),
+(17, '개입을 최소화한다', 8, 'N'),
+
+(18, '농담도 자주 한다', 2, 'E'),
+(18, '차분히 경청하는 편', 4, 'I'),
+(18, '상대에 따라 조절', 6, 'A'),
+(18, '필요한 말만 한다', 8, 'N');
+
+INSERT INTO sim_result (testid, totalscore, resulttype, result) VALUES
+(5, 8, NULL, '당신은 사교적인 리더형! 적극적이고 말도 잘 해요.'),
+(5, 16, NULL, '당신은 내향적 사색가! 조용히 깊은 교류를 선호합니다.'),
+(5, 24, NULL, '당신은 유연한 조율자! 상황에 따라 유동적으로 대처합니다.'),
+(5, 32, NULL, '당신은 신중한 관찰자! 적당한 거리를 두며 사람을 봅니다.');
+
+
+-- test 6
+INSERT INTO sim_test (testname) VALUES ('당신의 감정 표현 스타일은?');
+
+INSERT INTO sim_question (testid, question, q_index) VALUES
+(6, '기쁠 때 당신의 반응은?', 1),
+(6, '화가 날 때 어떻게 하나요?', 2),
+(6, '슬플 때는?', 3),
+(6, '감동했을 때는?', 4);
+
+INSERT INTO sim_answer (questionid, answer, score, type) VALUES
+(19, '소리 지르거나 환호한다', 2, 'O'),
+(19, '입꼬리만 살짝 올라간다', 4, 'I'),
+(19, '누구에게든 말한다', 6, 'S'),
+(19, '마음으로만 느낀다', 8, 'H'),
+
+(20, '즉시 표현한다', 2, 'O'),
+(20, '조용히 감정 정리', 4, 'I'),
+(20, '돌려 말하며 비친다', 6, 'S'),
+(20, '표정 관리하며 넘긴다', 8, 'H'),
+
+(21, '눈물이 나는 편이다', 2, 'S'),
+(21, '슬픔을 감춘다', 4, 'H'),
+(21, '일기를 쓴다', 6, 'I'),
+(21, '사람들에게 털어놓는다', 8, 'O'),
+
+(22, '바로 표현하고 고마움을 전한다', 2, 'O'),
+(22, '살짝 미소만 짓는다', 4, 'I'),
+(22, '상대에게 편지를 쓴다', 6, 'S'),
+(22, '가슴에만 담아둔다', 8, 'H');
+
+INSERT INTO sim_result (testid, totalscore, resulttype, result) VALUES
+(6, 8, NULL, '당신은 표현형! 감정을 솔직하게 드러내는 사람입니다.'),
+(6, 16, NULL, '당신은 내면형! 감정을 스스로 다스리는 성향입니다.'),
+(6, 24, NULL, '당신은 사회적 배려형! 상황에 맞춰 감정을 조절합니다.'),
+(6, 32, NULL, '당신은 은둔형! 감정을 안으로 삭이는 편입니다.');
+
+commit;
+
+select * from sim_test;
+select * from sim_question;
+select * from sim_answer;
+select * from sim_result;
+
+
+

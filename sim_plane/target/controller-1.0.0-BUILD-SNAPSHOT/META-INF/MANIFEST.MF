@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+<<<<<<< HEAD
+Built-By: 이연수
+Build-Jdk: 11.0.27
+=======
+Built-By: M
+Build-Jdk: Eclipse Temurin 11.0.27
+>>>>>>> 2b53f6525f0bf16378ac3627abcc135ed29f73cb
+
