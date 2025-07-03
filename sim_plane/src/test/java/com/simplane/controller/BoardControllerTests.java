@@ -31,16 +31,18 @@ public class BoardControllerTests {
     }
 
     @Test
+
     public void testRegister() throws Exception {
+
         String resultPage = mockMvc.perform(MockMvcRequestBuilders
-                .post("/board/register")
-                .param("title", "테스트 새글 제목")
-                .param("content", "테스트 새글 내용")
-                .param("imagePath", "/images/test.jpg")
+                        .post("/board/register")
+                        .param("title", "테스트 새글 제목")
+                        .param("content", "테스트 새글 내용")
+                        .param("writer", "작성자")
+                        .param("imagePath", "/images/test.jpg")
                 ).andReturn()
                 .getModelAndView()
                 .getViewName();
-
         log.info("resultPage: {}", resultPage);
     }
 }

@@ -2,11 +2,13 @@ package com.simplane.service;
 
 import com.simplane.domain.BoardVO;
 import com.simplane.domain.Criteria;
+import com.simplane.domain.ImgPathVO;
 import com.simplane.mapper.BoardMapper;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor //생성자 주입
 public class BoardServiceImpl implements BoardService {
 
+    @Autowired
     private final BoardMapper mapper;
 
     @Override
@@ -54,5 +57,21 @@ public class BoardServiceImpl implements BoardService {
     public boolean remove(Long boardid){
         log.info("remove...");
         return mapper.delete(boardid) == 1; //삭제 성공시 1반환 => true, false로 변환
+    }
+
+
+    @Override
+    public List<ImgPathVO> getImageList(Long boardid) {
+        return mapper.getImageList(boardid);
+    }
+
+    @Override
+    public void deleteImg(Long boardid) {
+        mapper.deleteImg(boardid);
+    }
+
+    @Override
+    public void createImg(ImgPathVO img) {
+        mapper.createImg(img);
     }
 }

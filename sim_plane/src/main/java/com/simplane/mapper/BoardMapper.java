@@ -28,6 +28,10 @@ public interface BoardMapper {
     public void updateReplyCnt(@Param("boardid")Long boardid, @Param("replycnt")Integer replycnt);
 
 
+    public List<ImgPathVO> getImageList(Long boardid);
+    public void deleteImg(Long boardid);
+    public void createImg(ImgPathVO img); //이미지 정보 등록
+
 
 
 
