@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.simplane.mapper.AnswerMapper">
+
+    <select id="readAnswerByQuestionId" resultType="com.simplane.domain.AnswerVO">
+        select * from sim_answer where questionid = #{questionid}
+    </select>
+
+    <select id="readAnswerByAnswerId" resultType="com.simplane.domain.AnswerVO">
+        select * from sim_answer where answerid = #{answerid}
+    </select>
+
+    <insert id="insertAnswer" useGeneratedKeys="true" keyProperty="answerid" keyColumn="answerid">
+        INSERT INTO sim_answer (questionid, answer, score, type)
+        VALUES (#{questionid}, #{answer}, #{score}, #{type})
+    </insert>
+
+    <delete id="deleteAnswersByQuestionId">
+        DELETE FROM sim_answer WHERE questionid = #{questionid}
+    </delete>
+
+</mapper>
