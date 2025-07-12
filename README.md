@@ -42,7 +42,7 @@
 
 | 분야 | 기술 |
 |------|------|
-| **백엔드** | Java, Spring Boot, MyBatis |
+| **백엔드** | Java, Spring Framework, MyBatis |
 | **프론트엔드** | HTML, CSS, JavaScript, Thymeleaf |
 | **데이터베이스** | MySQL |
 | **개발 도구** | IntelliJ, Git, GitHub |
@@ -80,7 +80,7 @@
 
 | 이름 | 역할 |
 |------|------|
-| 이연수 | 백엔드 개발, DB 설계, 심리테스트 로직 구현, 프론트 UI |
+| 이연수 | 백엔드 개발, DB 설계, 심리테스트 로직 구현|
 
 ---
 
