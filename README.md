@@ -1,4 +1,4 @@
-# 🧠 SimPlane - 성격유형 기반 심리테스트 웹 플랫폼
+# 🧠 sim_plane - 성격유형 기반 심리테스트 웹 플랫폼
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
