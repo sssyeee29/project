@@ -1,21 +1,26 @@
 # 🧠 sim_plane - 성격유형 기반 심리테스트 웹 플랫폼
 
+---
+📚목차📚
+1. 프로젝트 개요
+2. 프로젝트 소개
+3. 프로젝트 참여자
+4. 개발환경
+5. 기술소개
+6. DB 테이블 구성(다이어그램)
+7. 화면 예시
+8. Trouble Shooting
+9. 개선사항 및 프로젝트 소감 
+
+---
+## 개발 환경 
+
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Framework](https://img.shields.io/badge/Spring_Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white)
 ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=mybatis&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-
----
-📚목차📚
-1. 프로젝트 개요
-2. 프로잭트 소개
-3. 프로젝트 주요기능
-4. DB 테이블 구성(다이어그램)
-5. 화면 예시
-6. 개선 사항
-7. 기술 스택 
 
 ---
 
