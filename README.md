@@ -1,7 +1,14 @@
 # 🧠 sim_plane - 성격유형 기반 심리테스트 웹 플랫폼
 
+(25.06.09 ~ 25.06.30)
+1주차 : DB 설계 및 프로젝트 구조 잡기 
+2주차 : 문의글 게시판 crud 구현, 이미지 업로드 기능 구현
+3주차 : 댓글 구현, 검색/필터링 기능 추가 
+4주차 : 시큐리티(로그인) 기능 추가 
+5주차 : 심리테스트 구현 
+
 ---
-📚목차📚
+# 📚목차📚
 1. 프로젝트 개요
 2. 프로젝트 소개
 3. 프로젝트 참여자
@@ -13,18 +20,13 @@
 9. 개선사항 및 프로젝트 소감 
 
 ---
-## 개발 환경 
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Framework](https://img.shields.io/badge/Spring_Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white)
-![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=mybatis&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+# 🔍 1. 프로젝트 개요
 
----
-
-## 🔍 프로젝트 개요
+요즘 사람들은 MBTI처럼 자신의 성격유형을 알아보는 테스트에 큰 흥미를 가지고 있습니다.
+저 역시 이러한 흐름 속에서 자연스럽게 관심을 가지게 되었고,
+간단한 클릭 몇 번으로 자신의 유형을 파악할 수 있다는 점이 큰 매력이라고 느끼게 되어 
+그래서 누구나 쉽게 참여하고 결과를 확인할 수 있는 성격유형 기반 심리테스트 플랫폼을 직접 만들어보고자 이 프로젝트를 시작하게 되었습니다.
 
 **SimPlane**은 "심리테스트 안에서 자유롭게 날아다녀라"라는 뜻을 가진 성격유형 테스트입니다.  
 성격유형을 기반으로 사용자의 성향을 분석하고, 다양한 주제의 심리테스트를 제공하는 웹 기반 심리테스트 플랫폼입니다.  
@@ -32,7 +34,7 @@
 
 ---
 
-# 프로젝트 소개
+# 2. 프로젝트 소개
 
 ## 로고 
 ![Image](https://github.com/user-attachments/assets/7dbc2aae-3220-4dc7-a1e8-52b4e7408302)
@@ -63,6 +65,14 @@
 
 ---
 
+## 3. 👩‍💻 참여자
+
+| 이름 | 역할 |
+|------|------|
+| 이연수 | 백엔드 개발, DB 설계, 테이블 정의서, 심리테스트 로직 구현|
+외 3명과 함께 개발했습니다. 
+
+
 ## 🛠 사용 기술 스택
 
 | 분야 | 기술 |
@@ -71,6 +81,16 @@
 | **프론트엔드** | HTML, CSS, JavaScript, Thymeleaf |
 | **데이터베이스** | MySQL |
 | **개발 도구** | IntelliJ, Git, GitHub |
+
+---
+## 개발 환경 
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Spring Framework](https://img.shields.io/badge/Spring_Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=JUnit5&logoColor=white)
+![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=mybatis&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 
 ---
 
@@ -99,23 +119,4 @@
 - [ ] 관리자 페이지 UI 고도화
 - [ ] 사용자 로그인 및 개인화 기능
 
----
 
-## 👩‍💻 참여자
-
-| 이름 | 역할 |
-|------|------|
-| 이연수 | 백엔드 개발, DB 설계, 심리테스트 로직 구현|
-
----
-
-## 💬 데모 / 소개 영상 (선택사항)
-
-> 예: [프로젝트 소개 영상](https://youtu.be/your-link)
-
----
-
-## 📎 라이선스
-
-본 프로젝트는 교육 및 포트폴리오 용도로 제작되었습니다.  
-상업적 사용은 제한되며, 출처를 밝히면 일부 코드 활용은 허용됩니다.
