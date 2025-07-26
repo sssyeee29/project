@@ -132,9 +132,7 @@
 
 # 6. 화면 예시
 <details>
-<summary><h2>화면구성 보기</h2></summary>
-  
-  <br>
+<summary><h3>화면구성 보기</h3></summary>
 
 ---
 
@@ -142,11 +140,9 @@
 
 <img width="1896" height="930" alt="메인페이지" src="https://github.com/user-attachments/assets/f632551a-56ac-4e0d-abfc-a1e0ada224ed" />
 
-* 상단 메뉴바를 통해 심리테스트, 게시판 등 다양한 기능 페이지로 이동할 수 있습니다.  
-* 로그인 / 회원가입 버튼과 로고 클릭 시 메인 페이지로 돌아올 수 있습니다.  
-* 하단에는 베스트 심리테스트 리스트가 노출되어 사용자 접근성을 높였습니다.
-
-<br>
+* **상단 메뉴바**를 통해 심리테스트, 게시판 등 다양한 기능 페이지로 이동할 수 있습니다.  
+* 로그인 / 회원가입 버튼과 로고 클릭 시 **메인 페이지**로 돌아올 수 있습니다.  
+* 하단에는 **베스트 심리테스트 리스트**가 노출되어 사용자 접근성을 높였습니다.
 
 ---
  
@@ -159,8 +155,6 @@
 * 모든 문항에 답변을 완료하면 점수를 기반으로 유형이 자동 분류됩니다.  
 * 결과 페이지에서 해당 유형에 맞는 설명과 이미지를 확인할 수 있습니다.  
 * **비회원 사용자도 로그인 없이 자유롭게 테스트에 참여할 수 있어 누구나 쉽게 이용할 수 있습니다.**
-
-<br>
 
 ---
 
@@ -175,8 +169,6 @@
 * 연도를 입력하고 확인 버튼을 누르면 해당 띠의 운세 결과가 출력됩니다.  
 * 회원가입 없이도 누구나 간편하게 이용 가능하도록 구성되어 있습니다.
 
-<br>
-
 ---
 
 <h3><포춘쿠키 기능 화면></h3>
@@ -189,14 +181,69 @@
 * 그 안에서 **연예인 명언 또는 어록**이 랜덤으로 출력됩니다.  
 * 누구나 가볍게 클릭만으로 이용 가능하며, 소소한 위로와 재미를 줄 수 있도록 구성된 기능입니다.
 
-<br>
+---
+
+<h3><회원가입></h3>
+
+<img width="1894" height="930" alt="image" src="https://github.com/user-attachments/assets/ccd8d745-986e-4f05-a29e-b24e3b8852da" />
+<img width="572" height="801" alt="image" src="https://github.com/user-attachments/assets/9c99ed93-ea3b-4a58-8487-359cc6da3866" />
+<img width="517" height="586" alt="image" src="https://github.com/user-attachments/assets/4dd2c80a-b9b5-44ce-89dc-4404b9c7280c" />
+
+
+* 우측 상단의 **회원가입** 버튼을 클릭하면, 회원정보를 입력할 수 있는 회원가입 창이 표시됩니다.  
+* **아이디**를 입력하고 **중복 확인** 버튼을 누르면,  
+  해당 아이디가 사용 가능한지 여부를 알려주는 **모달창**이 표시됩니다.  
+* 아이디 중복 확인 후에는 **비밀번호, 닉네임, 이메일** 등의 정보를 입력할 수 있습니다.  
+* 모든 항목 입력 후 **가입하기** 버튼을 클릭하면,  
+  자동으로 **로그인 페이지**로 이동하며 회원가입이 완료됩니다.  
+* 로그인 페이지로 이동하면 회원가입이 **성공적으로 처리**된 것입니다.
 
 ---
 
-<h3 align="center"><로그></h3>
+<h3><로그인></h3>
 
 <img width="1890" height="936" alt="image" src="https://github.com/user-attachments/assets/c5054f58-390c-4b74-8627-950aa2365bd5" />
+<img width="1891" height="934" alt="image" src="https://github.com/user-attachments/assets/07efd64c-a938-4ff8-9b6e-5aee723b844c" />
+<img width="1891" height="147" alt="image" src="https://github.com/user-attachments/assets/c9bca41d-440d-4997-b36e-9e57798d9843" />
 
+* 우측 상단의 **로그인** 버튼을 클릭하면 아이디와 비밀번호를 입력할 수 있는 로그인 창이 표시됩니다.  
+* 로그인 정보를 입력하고 **로그인 버튼**을 누르면,  
+  로그인 전에는 **"로그인 / 회원가입"**으로 표시되던 상단 버튼이 **"로그아웃"**으로 변경됩니다.  
+* 로그인 후에는 각 심리테스트 결과에 **댓글을 작성**할 수 있으며,  
+  **문의 게시판에 글 등록** 기능도 활성화됩니다.  
+* 회원만 사용할 수 있는 기능들을 통해 더욱 풍부한 사용자 경험을 제공합니다.
+
+---
+
+<h3><댓글 작성></h3>
+
+<img width="1670" height="948" alt="image" src="https://github.com/user-attachments/assets/bee3ad6b-183e-4759-84d2-fe42db695b07" />
+<img width="1676" height="941" alt="image" src="https://github.com/user-attachments/assets/931f16a0-0fd9-4ef9-a551-e1fcfbde8662" />
+<img width="582" height="684" alt="image" src="https://github.com/user-attachments/assets/70405d4a-dff5-4bc5-8609-5a54ce77357d" />
+
+* 각 심리테스트 결과 페이지 하단에는 **댓글 작성란**이 제공되어,  
+  사용자가 테스트 결과에 대한 의견을 남길 수 있습니다.  
+* **로그인하지 않은 사용자**가 댓글을 작성하려고 할 경우,  
+  **로그인 요청 모달창**이 자동으로 표시되어 로그인 후 이용하도록 유도됩니다.  
+* 로그인한 사용자가 댓글을 입력한 뒤 **작성 버튼**을 누르면,  
+  **"댓글 작성 완료"**라는 메시지가 모달창에 표시되며,  
+  곧바로 화면에 **작성한 댓글이 반영**됩니다.  
+
+---
+
+<h3><문의게시판></h3>
+
+<img width="1891" height="913" alt="image" src="https://github.com/user-attachments/assets/f2dd76e0-4db5-4d2d-93b6-72a0d45a37f7" />
+<img width="1895" height="924" alt="image" src="https://github.com/user-attachments/assets/f5d9bd19-74c0-485b-b4b1-820be0b42dfa" />
+<img width="1886" height="938" alt="image" src="https://github.com/user-attachments/assets/4acaea9a-22f3-4dd3-bd0a-c0608e03a6e4" />
+
+* **문의게시판은 로그인한 사용자만 접근 및 작성**할 수 있도록 설정되어 있습니다.  
+* 로그인 후, 상단 메뉴에서 **'문의게시판'**을 클릭하면  
+  **제목, 내용, 이미지**를 입력할 수 있는 작성 페이지로 이동합니다.  
+* 작성 후 **등록 버튼**을 클릭하면 게시글이 정상적으로 등록되며,  
+  문의게시판 목록에서 확인할 수 있습니다.  
+* 등록된 게시글은 **수정 및 삭제**도 가능하여,  
+  사용자 스스로 작성한 문의글을 쉽게 관리할 수 있습니다.
 
 </details>
 
