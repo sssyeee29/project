@@ -145,7 +145,8 @@
 </p>
 
  <br>
-<img width="1919" height="1079" alt="심리테스트 질문과 결과 화면" src="https://github.com/your-image-url/test-question-result.png" />
+<img width="1888" height="942" alt="image" src="https://github.com/user-attachments/assets/55e2b891-c1fa-438f-8fdd-6780ea57f7fd" />
+
 <img width="1889" height="936" alt="image" src="https://github.com/user-attachments/assets/ef6eb5fd-a791-43f6-86df-ee1b205e70ea" />
 <p align="center"> <b>▲ 심리테스트 질문 & 결과 화면</b><br> 
   사용자는 심리테스트 목록에서 항목을 선택한 후 질문에 응답하며 테스트를 진행할 수 있습니다.<br> 모든 문항에 답변을 완료하면 점수를 기반으로 유형이 자동 분류되고,<br>
