@@ -148,7 +148,7 @@
 
 <br>
  
-<h3 align="center">심리테스트 질문 & 결과 화면</h3>
+<h3 align="center"><심리테스트 질문 & 결과 화면></h3>
 
 <img width="1888" height="942" alt="심리테스트 질문 화면" src="https://github.com/user-attachments/assets/55e2b891-c1fa-438f-8fdd-6780ea57f7fd" />
 <img width="1889" height="936" alt="심리테스트 결과 화면" src="https://github.com/user-attachments/assets/ef6eb5fd-a791-43f6-86df-ee1b205e70ea" />
@@ -160,10 +160,18 @@
   <b>비회원 사용자도 로그인 없이 자유롭게 테스트에 참여할 수 있어 누구나 쉽게 이용할 수 있습니다.</b>
 </p>
 
+<h3 align="center"><띠별 운세 기능 화면></h3>
+
 <img width="1889" height="938" alt="image" src="https://github.com/user-attachments/assets/06264bbc-2d38-44ac-984b-be25b5c8035a" />
 <img width="1892" height="924" alt="image" src="https://github.com/user-attachments/assets/4ad47930-ffac-4d78-8035-47b30d3819b2" />
 <img width="1889" height="943" alt="image" src="https://github.com/user-attachments/assets/917d4979-ba48-4683-9d3e-9bd0337ebf9f" />
 
+<p align="center">
+  상단 메뉴에서 <b>'운세'</b> 항목을 선택하면 다양한 운세 기능으로 이동할 수 있으며,<br>
+  그 중 <b>'띠별 운세'</b>를 클릭하면 본인의 태어난 연도를 입력하는 입력창이 나타납니다.<br>
+  연도를 입력한 뒤 확인 버튼을 누르면 해당 띠에 대한 운세 결과가 출력되며,<br>
+  <b>사용자가 별도의 회원가입 없이도 간편하게 확인할 수 있도록</b> 구성되어 있습니다.
+</p>
 
  
 </details>
