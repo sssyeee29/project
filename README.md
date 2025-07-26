@@ -136,22 +136,44 @@
   
   <br>
   
-<img width="1919" height="1079" alt="메인 페이지 이미지" src="https://github.com/user-attachments/assets/8778e9fd-4d80-43f6-a478-0d6e0ed759ef" />
+<h3 align="center">메인 페이지 화면</h3>
+
+<img width="1919" height="1079" alt="메인 페이지 이미지" src="https://github.com/your-image-url/mainpage.png" />
+
 <p align="center">
-  <b>▲ 메인 페이지 화면</b><br>
   상단 메뉴바를 통해 다양한 기능 페이지(심리테스트, 게시판 등)로 이동할 수 있으며,<br>
   로그인 / 회원가입 버튼과 로고 클릭 시 메인으로 돌아오는 기능도 제공합니다.<br>
   하단에는 베스트 심리테스트 리스트가 노출되어 사용자 접근성을 높였습니다.
 </p>
 
  <br>
-<img width="1888" height="942" alt="image" src="https://github.com/user-attachments/assets/55e2b891-c1fa-438f-8fdd-6780ea57f7fd" />
 
-<img width="1889" height="936" alt="image" src="https://github.com/user-attachments/assets/ef6eb5fd-a791-43f6-86df-ee1b205e70ea" />
-<p align="center"> <b>▲ 심리테스트 질문 & 결과 화면</b><br> 
-  사용자는 심리테스트 목록에서 항목을 선택한 후 질문에 응답하며 테스트를 진행할 수 있습니다.<br> 모든 문항에 답변을 완료하면 점수를 기반으로 유형이 자동 분류되고,<br>
-  결과 페이지에서 해당 유형에 맞는 설명을 확인할 수 있습니다.<br>
-  <b>비회원 사용자도 로그인 없이 자유롭게 테스트에 참여</b>할 수 있도록 구성되어 있어 접근성이 높습니다. </p>
+<img width="1567" height="768" alt="심리테스트 목록 화면" src="https://github.com/user-attachments/assets/3e22c89e-8167-4088-9be8-ed7e33052300.png" />
+
+<p align="center">
+  <b>▲ 심리테스트 목록 화면</b><br>
+  상단 메뉴에서 <b>'심리테스트'</b> 항목을 클릭하면 다양한 테스트가 카드 형식으로 나열된 페이지로 이동됩니다.<br>
+  각 테스트는 썸네일 이미지, 제목, <b>‘테스트 시작’</b> 버튼으로 구성되어 있으며,<br>
+  로그인 여부와 관계없이 누구나 자유롭게 선택하여 참여할 수 있도록 설계되어 있습니다.
+</p>
+ 
+<h3 align="center">심리테스트 질문 & 결과 화면</h3>
+
+<img width="1888" height="942" alt="심리테스트 질문 화면" src="https://github.com/user-attachments/assets/55e2b891-c1fa-438f-8fdd-6780ea57f7fd" />
+<img width="1889" height="936" alt="심리테스트 결과 화면" src="https://github.com/user-attachments/assets/ef6eb5fd-a791-43f6-86df-ee1b205e70ea" />
+
+<p align="center">
+  사용자는 심리테스트 목록에서 항목을 선택한 후 질문에 응답하며 테스트를 진행할 수 있습니다.<br>
+  모든 문항에 답변을 완료하면 점수를 기반으로 유형이 자동 분류되며,<br>
+  결과 페이지에서 해당 유형에 맞는 설명과 이미지를 확인할 수 있습니다.<br><br>
+  <b>비회원 사용자도 로그인 없이 자유롭게 테스트에 참여할 수 있어 누구나 쉽게 이용할 수 있습니다.</b>
+</p>
+
+<img width="1889" height="938" alt="image" src="https://github.com/user-attachments/assets/06264bbc-2d38-44ac-984b-be25b5c8035a" />
+<img width="1892" height="924" alt="image" src="https://github.com/user-attachments/assets/4ad47930-ffac-4d78-8035-47b30d3819b2" />
+<img width="1889" height="943" alt="image" src="https://github.com/user-attachments/assets/917d4979-ba48-4683-9d3e-9bd0337ebf9f" />
+
+
  
 </details>
 
