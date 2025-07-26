@@ -136,9 +136,9 @@
   
   <br>
   
-<h3 align="center">메인 페이지 화면</h3>
+<h3 align="center"><메인 페이지 화면></h3>
 
-<img width="1919" height="1079" alt="메인 페이지 이미지" src="https://github.com/your-image-url/mainpage.png" />
+<img width="1896" height="930" alt="메인페이지" src="https://github.com/user-attachments/assets/f632551a-56ac-4e0d-abfc-a1e0ada224ed" />
 
 <p align="center">
   상단 메뉴바를 통해 다양한 기능 페이지(심리테스트, 게시판 등)로 이동할 수 있으며,<br>
@@ -146,16 +146,7 @@
   하단에는 베스트 심리테스트 리스트가 노출되어 사용자 접근성을 높였습니다.
 </p>
 
- <br>
-
-<img width="1567" height="768" alt="심리테스트 목록 화면" src="https://github.com/user-attachments/assets/3e22c89e-8167-4088-9be8-ed7e33052300.png" />
-
-<p align="center">
-  <b>▲ 심리테스트 목록 화면</b><br>
-  상단 메뉴에서 <b>'심리테스트'</b> 항목을 클릭하면 다양한 테스트가 카드 형식으로 나열된 페이지로 이동됩니다.<br>
-  각 테스트는 썸네일 이미지, 제목, <b>‘테스트 시작’</b> 버튼으로 구성되어 있으며,<br>
-  로그인 여부와 관계없이 누구나 자유롭게 선택하여 참여할 수 있도록 설계되어 있습니다.
-</p>
+<br>
  
 <h3 align="center">심리테스트 질문 & 결과 화면</h3>
 
