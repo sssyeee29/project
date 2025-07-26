@@ -132,8 +132,21 @@
 
 # 6. 화면 예시
 <details>
+<summary>화면구성 보기</summary>
+  
   <br>
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8778e9fd-4d80-43f6-a478-0d6e0ed759ef" />
+  
+<img width="1919" height="1079" alt="메인 페이지 이미지" src="https://github.com/user-attachments/assets/8778e9fd-4d80-43f6-a478-0d6e0ed759ef" />
+<p align="center">
+  <b>▲ 메인 페이지 화면</b><br>
+  상단 메뉴바를 통해 다양한 기능 페이지(심리테스트, 게시판 등)로 이동할 수 있으며,<br>
+  로그인 / 회원가입 버튼과 로고 클릭 시 메인으로 돌아오는 기능도 제공합니다.<br>
+  하단에는 베스트 심리테스트 리스트가 노출되어 사용자 접근성을 높였습니다.
+</p>
+
+ <br>
+
+ 
 </details>
 
 ---
