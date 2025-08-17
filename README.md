@@ -245,27 +245,28 @@
 ---
 
 # 7. Trouble Shooting 
-<h3>게시글 수정 시 이미지가 누적되는 문제</h3>
+<h3>Spring MVC 환경 설정 문제</h3>
 
 #### 📌 문제 상황  
-문의게시판에서 게시글을 수정할 때,  
-기존에 등록된 이미지를 삭제하지 않고 새로운 이미지만 추가되는 현상이 발생했습니다.  
-사용자는 이미지가 교체될 것이라 기대했지만, 실제로는 이미지가 계속 쌓여서 혼란을 겪을 수 있었습니다.
+Spring Boot가 아닌 Spring Framework 환경에서 프로젝트를 진행하면서,   
+DispatcherServlet과 ViewResolver를 직접 설정해야 했습니다.  
+하지만 JSP 뷰 페이지가 정상적으로 렌더링되지 않고 404 오류가 발생했습니다. 
 
 #### 💥 원인 분석  
-- 이미지 수정 로직에서 기존 이미지 정보를 삭제하지 않고 새로운 이미지를 추가만 했기 때문
-- DB에는 계속 이미지 데이터가 누적되고 있었음
+- web.xml과 servlet-context.xml에서 설정한 ViewResolver 경로가 실제 JSP 경로와 불일치  
+- 컨트롤러에서 반환한 뷰 이름을 ViewResolver가 올바르게 매핑하지 못해 발생  
 
 #### 🔍 해결 방법  
-1. 게시글 수정이 성공한 경우에만 이미지 관련 로직 실행  
-2. 기존 게시글의 이미지 정보를 DB에서 **완전히 삭제**  
-3. 새로 전달받은 이미지 경로들을 기반으로 **이미지 정보를 다시 등록**
+1. DispatcherServlet 경로 일치: web.xml의 init-param(/WEB-INF/spring/appServlet/servlet-context.xml) ↔ 실제 파일 경로 맞춤
+2. ViewResolver–JSP 경로 통일: prefix /WEB-INF/views/, suffix .jsp 기준으로 JSP를 WEB-INF/views/…/*.jsp에 정리
+3. 컨트롤러 반환 규칙 고정: return "폴더/파일명"만 사용(슬래시·확장자 제외)
 
+<img width="892" height="111" alt="image" src="https://github.com/user-attachments/assets/fa1108f2-e7fa-4dad-8ef8-a37a6ec85a86" />
+<img width="760" height="395" alt="image" src="https://github.com/user-attachments/assets/b7df5946-7da8-48e2-ae4d-d39b0235c815" />
 
-<img width="944" height="554" alt="image" src="https://github.com/user-attachments/assets/6b3b40f4-9c7a-46b4-a5f1-bd2f1016af76" />
-
-이러한 로직 개선을 통해 게시글 수정 시 기존 이미지가 깔끔하게 삭제되고, 
-새로운 이미지들만 반영되도록 처리하여, 이미지 누적 문제를 해결하고 사용자 경험을 개선할 수 있었습니다.
+이러한 설정 정비를 통해 JSP 페이지가 정상적으로 렌더링되었으며,  
+뷰 경로와 컨트롤러 규칙을 일관성 있게 맞춤으로써 이후 신규 화면 추가 시에도  
+별도의 설정 수정 없이 안정적으로 동작하도록 개선할 수 있었습니다. 
 
 ---
 
