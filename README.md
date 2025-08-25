@@ -143,7 +143,8 @@
 
 <h3><메인 페이지 화면></h3>
 
-<img width="1896" height="930" alt="메인페이지" src="https://github.com/user-attachments/assets/f632551a-56ac-4e0d-abfc-a1e0ada224ed" />
+<img width="1212" height="853" alt="image" src="https://github.com/user-attachments/assets/823376f9-6f40-4b3d-b506-30b491d4325d" />
+
 
 * **상단 메뉴바**를 통해 심리테스트, 게시판 등 다양한 기능 페이지로 이동할 수 있습니다.  
 * 로그인 / 회원가입 버튼과 로고 클릭 시 **메인 페이지**로 돌아올 수 있습니다.  
